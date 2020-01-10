@@ -9,7 +9,7 @@ script:
   - docker run ivandjukic94/react-test npm test -- --coverage
 
 after_success:
-  - echo "$DOCKER_PASSWORD"
+  - echo $DOCKER_PASSWORD
   - echo "$DOCKER_ID"
   # - docker build -t ivandjukic94/multi-client ./client
   # - docker build -t ivandjukic94/multi-nginx ./nginx
