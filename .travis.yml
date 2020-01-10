@@ -2,6 +2,9 @@ sudo: required
 services:
   - docker
 before_install:
+  - echo "asdadsadsdas"
+  - echo $DOCKER_PASSWORD
+  - echo "$DOCKER_ID"
   - docker build -t ivandjukic94/react-test -f ./client/Dockerfile.dev ./client
 
 script:
